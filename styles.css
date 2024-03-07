@@ -1,0 +1,671 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #12ac8e;
+  --primary-color-dark: #0d846c;
+  --primary-color-light: #e9f7f7;
+  --secondary-color: #fb923c;
+  --text-dark: #333333;
+  --text-light: #767268;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+.login_avatar{
+  width:150px;
+  height:150px;
+}
+.steps_walked {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M14.12 10H19V8.2h-3.62l-2-3.33c-.3-.5-.84-.84-1.46-.84c-.18 0-.34.03-.5.08L6 5.8V11h1.8V7.33l2.11-.66L6 22h1.8l2.87-8.11L13 17v5h1.8v-6.41l-2.49-4.54l.73-2.87M14 3.8c1 0 1.8-.8 1.8-1.8S15 .2 14 .2S12.2 1 12.2 2S13 3.8 14 3.8'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+.heartbeat {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath fill='%23000' d='M71.76 140H31.7a12 12 0 1 1 0-24h33.63l12.45-18.66a12 12 0 0 1 20 0l22 33l6-9a12 12 0 0 1 10-5.34h24a12 12 0 1 1 0 24h-17.6l-12.46 18.66a12 12 0 0 1-20 0l-22-33l-6 9a12 12 0 0 1-9.96 5.34M177.91 28c-20.12 0-38 7.93-50.07 21.56C115.74 35.93 97.89 28 77.76 28a66 66 0 0 0-65.69 58.68A12 12 0 0 0 36 89.32A42 42 0 0 1 77.76 52c17.83 0 32.75 9.4 38.95 24.54a12 12 0 0 0 22.25 0C145.16 61.4 160.08 52 177.91 52A42.08 42.08 0 0 1 220 94c0 29.42-25.86 57.77-47.56 76.36a329 329 0 0 1-44.58 31.81c-10.87-6.45-35.37-22-56.51-42.73a12 12 0 1 0-16.84 17.12c30.39 29.81 66.15 49.2 67.66 50a12.06 12.06 0 0 0 11.39 0C138 224.14 244 166.34 244 94a66.12 66.12 0 0 0-66.09-66'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+.calories-burnt{
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2048 2048'%3E%3Cpath fill='%23000' d='M384 1280q0 88 23 170t64 153t100 129t130 100t153 65t170 23q66 0 131-13t125-41v137q-123 45-256 45q-106 0-204-27t-183-78t-156-120t-120-155t-77-184t-28-204q0-84 18-165t52-155t84-140t113-122q6 37 18 78t29 81t38 77t46 65q22 25 52 25q27 0 45-19t19-46q0-11-3-20t-10-18q-56-82-86-163t-31-182q0-119 45-224t124-183T992 46t224-46h64v64q0 177 66 330t190 278t190 278t66 330h-128q0-152-56-281t-162-236q-130-132-204-288t-88-343q-83 11-153 50t-123 99t-81 135t-29 160q0 79 23 141t68 126q19 28 29 54t11 62q0 40-15 75t-42 61t-61 42t-75 15q-46 0-81-17t-62-46t-49-65t-39-72q-45 75-68 158t-23 170m1664 384v128h-256v256h-128v-256h-256v-128h256v-256h128v256z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+.blood-pressure{
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M2 9V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v5.5h-2V6H4v3zm8.675 11H4q-.825 0-1.412-.587T2 18v-3h2v3h6.075q.075.525.225 1.025t.375.975M17 22q-2.075 0-3.537-1.463T12 17q0-2.075 1.463-3.537T17 12q2.075 0 3.538 1.463T22 17q0 2.075-1.463 3.538T17 22m.2-4.5l2.275-2.275l-.7-.7L16.5 16.8zM2 13v-2h3.6L7 13.775L10.35 7h1.275l1.95 3.9q-.45.275-.862.575t-.763.675l-.95-1.9L7.625 17h-1.25l-2-4z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+.oxygen-tank {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M19 6.048h-2v2h5v2h-5v2.083c2.838.476 5 2.944 5 5.917v2H10v-2a6.002 6.002 0 0 1 5-5.917v-2.083h-2.17a3.001 3.001 0 0 1-5.83-1a3 3 0 0 1 5.83-1H15v-2h-2v-2h6zm-9 16v21a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-21zm0-14a1 1 0 1 0 0 2a1 1 0 0 0 0-2m16 13a4 4 0 1 1 8 0v6a4 4 0 0 1-8 0zm4-2a2 2 0 0 0-2 2v6a2 2 0 0 0 4 0v-6a2 2 0 0 0-2-2m5 7h3a1 1 0 1 1 0 2a3 3 0 0 0-3 3v2a1 1 0 0 0 1 1h5v-2h-4v-1a1 1 0 0 1 1-1a3 3 0 0 0 0-6h-3z' clip-rule='evenodd'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+.health--temperature {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23000' d='M13 17.26V6a4 4 0 0 0-8 0v11.26a7 7 0 1 0 8 0M9 4a2 2 0 0 1 2 2v7H7V6a2 2 0 0 1 2-2m0 24a5 5 0 0 1-2.5-9.33l.5-.28V15h4v3.39l.5.28A5 5 0 0 1 9 28M20 4h10v2H20zm0 6h7v2h-7zm0 6h10v2H20zm0 6h7v2h-7z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.back-button {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 72 72'%3E%3Cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' stroke-width='4' d='m46.196 16.205l-19.392 19.46l19.392 19.46'/%3E%3C/svg%3E");
+}
+
+.section__header {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+.gis--poi-map {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23000' d='m70.387 70l-3.854 7.247l18.87-3.085c-3.808-1.91-8.963-3.275-15.016-4.162m-48.61 1.58C13.037 73.885 7.5 77.662 7.5 83.272a8.4 8.4 0 0 0 .774 3.497l30.285-4.95zM91.79 80l-42.15 6.87l11.116 12.646C79.01 97.881 92.5 92.05 92.5 83.272c0-1.17-.252-2.257-.71-3.271m-49.272 8.055l-28.48 4.655C21.566 97.374 34.853 100 50 100c.918 0 1.815-.026 2.719-.045z'/%3E%3Cpath fill='%23000' d='M50.002 0c-16.3 0-29.674 13.333-29.674 29.596c0 6.252 1.987 12.076 5.342 16.865l19.234 33.25l.082.107c.759.991 1.5 1.773 2.37 2.348c.87.576 1.95.92 3.01.814c2.118-.212 3.415-1.708 4.646-3.376l.066-.086l21.234-36.141l.012-.023c.498-.9.866-1.816 1.178-2.708a29.246 29.246 0 0 0 2.17-11.05C79.672 13.333 66.302 0 50.002 0m0 17.045c7.071 0 12.59 5.509 12.59 12.55c0 7.043-5.519 12.55-12.59 12.55c-7.072 0-12.594-5.508-12.594-12.55c0-7.04 5.523-12.55 12.594-12.55' color='%23000'/%3E%3C/svg%3E");
+  background-color:#0d846c;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+.medicine-pill {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5'%3E%3Cpath d='M8.6 16.4a4.6 4.6 0 0 1-6.5-6.5l7.8-7.8a4.6 4.6 0 0 1 6.5 6.5M5.999 5.999l4.25 4.25'/%3E%3Cpath d='M23.25 15.75a7.669 7.669 0 0 1-6 7.5a7.669 7.669 0 0 1-6-7.5V13.5a1.5 1.5 0 0 1 1.5-1.5h9a1.5 1.5 0 0 1 1.5 1.5zm-6-.75v4.5M15 17.25h4.5'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+.Health--report {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23000' d='M10 18h8v2h-8zm0-5h12v2H10zm0 10h5v2h-5z'/%3E%3Cpath fill='%23000' d='M25 5h-3V4a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v1H7a2 2 0 0 0-2 2v21a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2M12 4h8v4h-8Zm13 24H7V7h3v3h12V7h3Z'/%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+.icon-hospital {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23000' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' d='M22 22H2'/%3E%3Cpath d='M17 22V6c0-1.886 0-2.828-.586-3.414C15.828 2 14.886 2 13 2h-2c-1.886 0-2.828 0-3.414.586C7 3.172 7 4.114 7 6v16m14 0V8.5c0-1.404 0-2.107-.337-2.611a2 2 0 0 0-.552-.552C19.607 5 18.904 5 17.5 5M3 22V8.5c0-1.404 0-2.107.337-2.611a2 2 0 0 1 .552-.552C4.393 5 5.096 5 6.5 5'/%3E%3Cpath stroke-linecap='round' d='M12 22v-3m-2-7h4m-8.5-1H7m-1.5 3H7m10-3h1.5M17 14h1.5m-13-6H7m10 0h1.5M10 15h4'/%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M12 9V5m2 2h-4'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+.Food-Routine{
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cg fill='%23000' fill-rule='evenodd' clip-rule='evenodd'%3E%3Cpath d='M9.614 16.63c1.556-1.608 3.112-2.144 5.186-1.072c1.868.965 2.895 1.061 3.838 1.071c.983-.01 2.052-.106 3.998-1.071c2.16-1.072 3.78-.536 5.401 1.072c1.91 1.896 2.5 3.87 2.701 5.361c.024.12.044.24.063.36a3.501 3.501 0 0 0-.912 6.306l-.079.203a3.5 3.5 0 1 0-3.52 6.02a12.05 12.05 0 0 1-.277.331c-.835.869-1.785 1.426-2.815 1.256c-3.24-.537-3.78-.537-4.32-.537h-.47c-.518 0-1.037 0-4.148.537c-2.49.428-4.49-3.753-5.482-5.896c-1.56-3.363-1.871-6.8-1.757-8.58c.193-1.492.76-3.465 2.593-5.36'/%3E%3Cpath d='M37.845 18.09a4.5 4.5 0 0 1 2.716 5.755c-.032.089-.075.17-.127.243a4.503 4.503 0 0 1 .88 5.801a4.514 4.514 0 0 1-1.055 1.166a4.48 4.48 0 0 1-.519 2.585a4.5 4.5 0 1 1-5.108 7.341a4.5 4.5 0 0 1-7.093-4.988a4.5 4.5 0 0 1 0-8.987a4.5 4.5 0 0 1 4.501-5.999c.01-.067.026-.135.05-.202a4.5 4.5 0 0 1 5.755-2.715m-1.983 21.307a2.5 2.5 0 1 0 2.578-4.153a1.005 1.005 0 0 1-.1-.042c-.665.46-1.46.746-2.318.792c.167.47.258.978.258 1.506c0 .678-.15 1.32-.418 1.897m.16-12.39a4.496 4.496 0 0 1 3.49 1.977a2.514 2.514 0 0 0 .457-1.091a2.5 2.5 0 0 0-3.692-2.573a4.496 4.496 0 0 1-.255 1.686m-.283-3.648a4.51 4.51 0 0 1 2.943-.2a2.5 2.5 0 0 0-4.71-1.678a.971.971 0 0 1-.029.072a4.52 4.52 0 0 1 1.796 1.806M31.78 23a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5m-4 6a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5m5.5 2.5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0m-1.5 3.5a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5M7.565 8.001h1.133c2.84 0 5.514 1.277 7.466 2.972a11.959 11.959 0 0 1 1.716 1.832v-2.239a1 1 0 1 1 2 0v6.6a.998.998 0 0 1-.38.785V18h-.068a.995.995 0 0 1-1.106-.002c-2.44-.044-4.892-.993-6.822-2.516c-1.976-1.56-3.476-3.78-3.798-6.358zm9.746 7.91c-.354-1.091-1.196-2.332-2.458-3.428c-1.36-1.18-3.08-2.079-4.884-2.376c.483 1.462 1.473 2.779 2.774 3.806c1.333 1.051 2.947 1.76 4.568 1.999'/%3E%3Cpath d='m37.968 9.144l.182 1.118c.455 2.803-.377 5.648-1.738 7.846c-1.338 2.162-3.334 3.92-5.415 4.258l-.987.16l-.16-.986c-.4-2.465.142-5.11 1.364-7.31c1.223-2.2 3.175-4.036 5.667-4.767zm-1.694 2.71c-1.365.712-2.507 1.9-3.312 3.348c-.824 1.484-1.266 3.19-1.241 4.83c1.02-.525 2.11-1.555 2.99-2.977c.948-1.53 1.559-3.373 1.564-5.2'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: currentColor;
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+.section-header-para{
+  align-items: center;
+}
+.btn {
+  padding: 0.75rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  white-space: nowrap;
+  color: var(--white);
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-image: linear-gradient(
+      to right,
+      rgba(18, 172, 142, 0.9),
+      rgba(18, 172, 142, 0.7)
+    ),
+    url("assets/header.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Insurance__image{
+  background-image: linear-gradient(
+      to right,
+      rgba(18, 172, 142, 0.9),
+      rgba(18, 172, 142, 0.7)
+    ),
+    url("assets/Insurance.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav__container {
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.nav__logo span {
+  color: var(--secondary-color);
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.link a {
+  padding: 0.5rem;
+  color: white;
+}
+
+.link a:hover {
+  padding: 0.75rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  white-space: nowrap;
+  color: var(--white);
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.header__container h1 {
+  margin-bottom: 1rem;
+  max-width: 800px;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  color: var(--white);
+}
+.header__content{
+  color:#ffffff
+}
+
+.header__container p {
+  margin-bottom: 2rem;
+  max-width: 600px;
+  color: var(--primary-color-light);
+}
+
+
+
+.service__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.service__header__content p {
+  max-width: 600px;
+  color: var(--text-light);
+}
+
+
+
+.service__grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.service__card {
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(231, 49, 49, 0.1);
+  cursor: pointer;
+}
+.health__card {
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(1, 14, 10, 0.1);
+  background-color: #e9f7f7;
+  opacity: 0.35;
+  cursor: pointer;
+}
+.health__card h4{
+  color:#01110e;
+  font-weight: bold;
+}
+.steps_walked { 
+  color:#03493b;
+  size: 50px;
+}
+.heartbeat { 
+  color:#03493b;
+  size: 50px;
+}
+.calories-burnt { 
+  color:#03493b;
+  size: 50px;
+}
+.blood-pressure{ 
+  color:#03493b;
+  size: 50px;
+}
+.oxygen-tank{ 
+  color:#03493b;
+  size: 50px;
+}
+.health--temperature{ 
+  color:#03493b;
+  size: 50px;
+}
+
+
+.service__card span {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 10px 20px;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  background-color: var(--primary-color-light);
+  border-radius: 100%;
+  transition: 0.3s;
+}
+
+.service__card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.service__card p {
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+.service__card a {
+  color: var(--primary-color);
+}
+
+.service__card a:hover {
+  color: var(--primary-color-dark);
+}
+
+.service__card:hover span {
+  color: var(--primary-color-light);
+  background-color: var(--primary-color);
+}
+.section-header-para{
+  font-size: 35px;
+}
+.section__header{
+  font-weight: bold;
+}
+
+
+
+.footer {
+  background-color: var(--primary-color-light);
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: 400px repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.footer__col h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.footer__col h3 span {
+  color: var(--secondary-color);
+}
+
+.footer__col h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.footer__col p {
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer__col p:hover {
+  color: var(--primary-color);
+}
+
+.footer__col i {
+  color: var(--primary-color);
+}
+
+.footer__bar {
+  background-color: var(--primary-color);
+}
+
+.footer__bar__content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer__bar__content p {
+  font-size: 0.8rem;
+  color: var(--white);
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+@media (width < 900px) {
+  .service__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .about__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about__image {
+    grid-area: 1/1/2/2;
+  }
+
+  .about__content {
+    text-align: center;
+  }
+
+  .why__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .why__content {
+    text-align: center;
+  }
+
+  .why__grid {
+    text-align: left;
+  }
+
+  .doctors__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width < 780px) {
+  .nav__links {
+    display: none;
+  }
+
+  .header__container {
+    flex-direction: column;
+  }
+}
+
+@media (width < 600px) {
+  .service__header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .service__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .why__grid {
+    column-gap: 1rem;
+  }
+
+  .doctors__header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .doctors__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer__bar__content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.track__container{
+  text-align: center;
+  font-weight: 10px;
+  letter-spacing: 0.5px;
+  color:#0d846c
+}
+
+.track__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  background-color: var(--primary-color-light);
+  color: var(--primary-color);
+}
+
+.location-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.medical_reports{
+  padding: 20px;
+}
+.food_routine{
+  padding: 20px;
+}
+.Medication_report{
+  padding: 20px;
+}
+.medication_image{
+  padding: 20px;
+  width: 100%;
+}
+.Consultation_image{
+  padding :20px;
+  height: 100%;
+}
+.track__container h1{
+  padding: 20px;
+  font-family:Arial, Helvetica, sans-serif ;
+  color: #e67f0a;
+}
+
+.header__form {
+  width: 100%;
+  max-width: 350px;
+}
+
+.header__form form {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header__form input {
+  padding: 1rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--primary-color);
+  background-color: var(--primary-color-light);
+  border-radius: 5px;
+}
+
+.header__form input::placeholder {
+  color: var(--primary-color);
+}
+
+.form__btn {
+  background-color: var(--primary-color);
+  transition: 0.3s;
+}
+
+.form__btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.header__form h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.Insurance__body{
+  background-color: #0d846c(
+      to right,
+      rgba(18, 172, 142, 0.9),
+      rgba(18, 172, 142, 0.7)
+    )
+}
+
+.track__header{
+  max-width: 100%;
+  max-height: 100%;
+}
